@@ -6,12 +6,17 @@ plugins {
 android {
     compileSdk 30
 
+    buildFeatures {
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "com.example.quizapp"
         minSdk 23
         targetSdk 30
         versionCode 1
         versionName "1.0"
+        compileSdkVersion 31
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
